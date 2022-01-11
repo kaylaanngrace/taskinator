@@ -11,9 +11,29 @@
     <header>
         <h1 class="page-title">Taskinator</h1>
 
-        <p>Click the button below to adda new task!</p>
+        <p>Click the button below to add a new task!</p>
+        <!--task-form-->
+        <form id="task-form">
+            <!--task-form input-->
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter Task Name" />  
+            </div>
 
-        <button class="btn" id="save-task">Add Task</button>
+            <div class="form-group">
+                <select name="task-type" class="select-dropdown">
+                    <option value="" disabled selected>Pick a task type</option>
+                    <option value="Print">Home</option>
+                    <option value="Web">School</option>
+                    <option value="Mobile">G3</option>
+                </select>
+            </div>
+
+            <!--task-form button-->
+            <div class="form-group">
+                <button class="btn" id="save-task" type="submit">Add Task</button>
+            </div>
+        </form>
+
     </header>
 
     <main class="page-content">
@@ -21,7 +41,7 @@
             <h2 class="list-title">Task to Do</h2>
 
             <ul class="task-list" id="task-to-do">
-                <li class="task-item">A task is going to be added soon!</li>
+                
             </ul>
         </section>
     </main>
